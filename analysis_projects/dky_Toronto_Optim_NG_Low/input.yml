@@ -1,0 +1,163 @@
+:algorithm_lhs_n_samples: null
+:algorithm_lhs_random_seed: null
+:algorithm_lhs_type: null
+:algorithm_nsga_eta: 3.0
+:algorithm_nsga_minimize_objectives:
+- energy_eui_total_gj_per_m_sq
+- cost_equipment_total_cost_per_m_sq
+:algorithm_nsga_n_generations: 20
+:algorithm_nsga_population: 40
+:algorithm_nsga_prob: 0.85
+:algorithm_type: nsga2
+:analysis_name: dky_Toronto_Optim_NG_Low
+:options:
+  :adv_dx_units:
+  - NECB_Default
+  :airloop_economizer_type:
+  - NECB_Default
+  - DifferentialEnthalpy
+  :baseline_system_zones_map_option:
+  - one_sys_per_dwelling_unit
+  :boiler_eff:
+  - NECB_Default
+  - Viessmann Vitocrossal 300 CT3-17 96.2% Efficient Condensing Gas Boiler
+  :building_type: LowriseApartment
+  :chiller_type:
+  - NECB_Default
+  :daylighting_type:
+  - NECB_Default
+  - add_daylighting_controls
+  :dcv_type:
+  - NECB_Default
+  - No_DCV
+  - Occupancy_based_DCV
+  - CO2_based_DCV
+  :door_construction_cond:
+  - NECB_Default
+  :ecm_system_name:
+  - NECB_Default
+  - HS09_CCASHP_Baseboard
+  - HS12_ASHP_Baseboard
+  :electrical_loads_scale:
+  - NECB_Default
+  :epw_file: CAN_ON_Toronto.Pearson.Intl.AP.716240_CWEC2016.epw
+  :erv_package:
+  - NECB_Default
+  - NECB_Default_All
+  - Plate-All
+  - Rotary-All
+  :ext_floor_cond:
+  - NECB_Default
+  - '0.227'
+  - '0.142'
+  :ext_roof_cond:
+  - NECB_Default
+  - '0.227'
+  - '0.183'
+  - '0.142'
+  - '0.121'
+  :ext_wall_cond:
+  - NECB_Default
+  - '0.314'
+  - '0.247'
+  - '0.183'
+  :fdwr_set:
+  - NECB_Default
+  :fixed_wind_solar_trans:
+  - NECB_Default
+  - '0.2'
+  - '0.4'
+  - '0.6'
+  :fixed_window_cond:
+  - NECB_Default
+  - '2.4'
+  - '1.6'
+  :furnace_eff:
+  - NECB_Default
+  - NECB 85% Efficient Condensing Gas Furnace
+  :glass_door_cond:
+  - NECB_Default
+  :glass_door_solar_trans:
+  - NECB_Default
+  :ground_floor_cond:
+  - NECB_Default
+  - '0.379'
+  :ground_roof_cond:
+  - NECB_Default
+  - '0.379'
+  - '0.210'
+  :ground_wall_cond:
+  - NECB_Default
+  - '0.379'
+  - '0.210'
+  :infiltration_scale:
+  - NECB_Default
+  :lights_scale:
+  - NECB_Default
+  :lights_type:
+  - NECB_Default
+  - LED
+  :npv_discount_rate:
+  - NECB_Default
+  :npv_end_year:
+  - NECB_Default
+  :npv_start_year:
+  - NECB_Default
+  :nv_delta_temp_in_out:
+  - NECB_Default
+  :nv_opening_fraction:
+  - NECB_Default
+  :nv_temp_out_min:
+  - NECB_Default
+  :nv_type:
+  - NECB_Default
+  :oa_scale:
+  - NECB_Default
+  :occupancy_loads_scale:
+  - NECB_Default
+  :overhead_door_cond:
+  - NECB_Default
+  :primary_heating_fuel: NaturalGas
+  :pv_ground_azimuth_angle:
+  - NECB_Default
+  :pv_ground_module_description:
+  - NECB_Default
+  :pv_ground_tilt_angle:
+  - NECB_Default
+  :pv_ground_total_area_pv_panels_m2:
+  - NECB_Default
+  :pv_ground_type:
+  - NECB_Default
+  :rotation_degrees:
+  - NECB_Default
+  :scale_x:
+  - '1.0'
+  :scale_y:
+  - '1.0'
+  :scale_z:
+  - '1.0'
+  :shw_eff:
+  - NECB_Default
+  :shw_scale:
+  - NECB_Default
+  :skylight_cond:
+  - NECB_Default
+  :skylight_solar_trans:
+  - NECB_Default
+  :srr_set:
+  - '0.0'
+  :template:
+  - NECB2020
+:output_meters: []
+:output_variables:
+- frequency: hourly
+  key: '*'
+  operation: '*'
+  unit: '*'
+  variable: Zone Air Temperature
+- frequency: hourly
+  key: '*'
+  operation: sum
+  unit: GJ
+  variable: Lights Total Heating Energy
+:run_annual_simulation: true
