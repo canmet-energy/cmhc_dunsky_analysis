@@ -1,6 +1,6 @@
 ---
-:analysis_name: ReferenceRuns
-:algorithm_type: reference
+:analysis_name: RefRunsWithInfil
+:algorithm_type: parametric
 :algorithm_nsga_population: null
 :algorithm_nsga_n_generations: null
 :algorithm_nsga_prob: null
@@ -264,7 +264,7 @@
   :occupancy_loads_scale: [ 'NECB_Default' ]
   :electrical_loads_scale: [ 'NECB_Default' ]
   :oa_scale: [ 'NECB_Default' ]
-  :infiltration_scale: [ 'NECB_Default' ]
+  :infiltration_scale: [ 'NECB_Default', '0.75', '0.50', '0.25' ]
   :chiller_type: [
       'NECB_Default',
       #'VSD'
