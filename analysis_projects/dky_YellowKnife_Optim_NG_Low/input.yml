@@ -21,7 +21,8 @@
   :boiler_eff:
   - NECB_Default
   - Viessmann Vitocrossal 300 CT3-17 96.2% Efficient Condensing Gas Boiler
-  :building_type: LowriseApartment
+  :building_type:
+  - LowriseApartment
   :chiller_type:
   - NECB_Default
   :daylighting_type:
@@ -41,7 +42,8 @@
   - HS14_CGSHP_FanCoils
   :electrical_loads_scale:
   - NECB_Default
-  :epw_file: CAN_NT_Yellowknife.AP.719360_CWEC2016.epw
+  :epw_file:
+  - CAN_NT_Yellowknife.AP.719360_CWEC2016.epw
   :erv_package:
   - NECB_Default
   - NECB_Default_All
@@ -118,7 +120,8 @@
   - NECB_Default
   :overhead_door_cond:
   - NECB_Default
-  :primary_heating_fuel: NaturalGas
+  :primary_heating_fuel:
+  - NaturalGas
   :pv_ground_azimuth_angle:
   - NECB_Default
   :pv_ground_module_description:

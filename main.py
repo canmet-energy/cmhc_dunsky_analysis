@@ -56,9 +56,9 @@ def create_yml_inputs(building_types, fuel_types, location_maps):
                 template[':algorithm_nsga_population'] = 40
                 template[':algorithm_nsga_prob'] = 0.85
                 template[':algorithm_type'] = 'nsga2'
-                template[':options'][':building_type'] = building_type[0]
-                template[':options'][':epw_file'] = location_map[0]
-                template[':options'][':primary_heating_fuel'] = fuel_type[0]
+                template[':options'][':building_type'] = [building_type[0]]
+                template[':options'][':epw_file'] = [location_map[0]]
+                template[':options'][':primary_heating_fuel'] = [fuel_type[0]]
 
 
                 # set yml file path to save to.
