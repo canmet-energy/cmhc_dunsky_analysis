@@ -39,7 +39,6 @@
   - NECB_Default
   - HS09_CCASHP_Baseboard
   - HS12_ASHP_Baseboard
-  - HS14_CGSHP_FanCoils
   :electrical_loads_scale:
   - NECB_Default
   :epw_file:
